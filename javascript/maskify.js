@@ -4,3 +4,9 @@
 // maskify(     "64607935616") ==      "#######5616"
 // maskify(               "1") ==                "1"
 // maskify(                "") ==                 ""
+
+function maskify(cc) {
+    d=cc.split('')
+    for(i=0;i<d.length-4;i++){d[i]='#'}
+    return d.join('')
+  }
